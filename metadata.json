@@ -1,0 +1,5 @@
+{
+  "name": "MQTT 智能门锁教学演示",
+  "description": "一个模拟物联网远程门锁控制的教学程序，使用 MQTT 协议。用于演示物联网架构中的发布/订阅模式。",
+  "requestFramePermissions": []
+}
