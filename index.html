@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MQTT 智能门锁教学演示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* 自定义滚动条样式 */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      /* 脉冲动画 */
+      @keyframes pulse-ring {
+        0% { transform: scale(0.33); opacity: 1; }
+        80%, 100% { transform: scale(1); opacity: 0; }
+      }
+      .animate-pulse-ring {
+        animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      }
+      /* 标题文字渐变动画 */
+      @keyframes shine {
+        0% { background-position: 200% center; }
+        100% { background-position: -200% center; }
+      }
+      .animate-text-shine {
+        background: linear-gradient(to right, #60a5fa 20%, #ffffff 40%, #60a5fa 60%, #60a5fa 80%);
+        background-size: 200% auto;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: shine 5s linear infinite;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "mqtt": "https://aistudiocdn.com/mqtt@^5.14.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-SW9sfazL.js"></script>
+</head>
+  <body class="bg-slate-950 text-slate-100 antialiased overflow-y-auto selection:bg-blue-500/30">
+    <div id="root"></div>
+</body>
+</html>
